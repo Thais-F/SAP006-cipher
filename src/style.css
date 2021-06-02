@@ -1,1 +1,22 @@
 /* css */
+
+header{
+    text-align: center;
+}
+
+.textarea {
+    display:inline-block;
+    width: 350px;
+    height: 152px;
+    resize:none
+}
+
+.button{
+    display:inline-block;
+    width: 100px;
+    height: 50px;
+}
+
+section{
+    
+}

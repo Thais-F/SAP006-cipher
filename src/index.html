@@ -6,9 +6,39 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="root">
-    <h1>Hello world!</h1>
-  </div>
+  
+    <header>
+      <h1>Cifra de César</h1>
+      <p>Olá, defina o offset e digite sua mensagem com segurança!</p>
+    </header>
+
+<!--------------------------------Conteúdo principal--------------------------------------------->
+
+    <main>
+      <section>
+      <form>
+        <label><input id="offset" name="offset_name" placeholder="offset:" required></label>
+      </form>
+
+      <form>
+        <textarea id="msg_tocifer" class="textarea" name="msg" placeholder="O que gostaria de cifar?"></textarea>
+        <button type="submit" id="to_cifer" class="button" onclick="; return false">Cifrar</button>   <!--Chamar uma função com onclick--->
+        <textarea id="msg_cifered" class="textarea" name="msg" placeholder="Mensagem criptografada"></textarea>
+      </form>
+
+      <form>
+        <textarea id="msg_todecifer" class="textarea" name="msg" placeholder="O que gostaria de decifrar?"></textarea>
+        <button type="submit" id="to_decifer" class="button" onclick="; return false">Decifrar</button>   <!--Chamar uma função com onclick--->
+        <textarea id="msg_decifered" class="textarea" name="msg" placeholder="Mensagem Descriptografada"></textarea>
+      </form>
+
+      <button type="reset" onclick="">Limpar</button> <!--inserir função reset-->
+     </section>
+
+    </main>
+  
+<!-----------------------------------Fim do conteúdo principal----------------------------------------->    
+
   <script src="index.js" type="module"></script>
 </body>
 </html>
