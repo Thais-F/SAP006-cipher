@@ -4,19 +4,37 @@ header{
     text-align: center;
 }
 
-.textarea {
-    display:inline-block;
-    width: 350px;
-    height: 152px;
-    resize:none
-}
 
 .button{
     display:inline-block;
     width: 100px;
     height: 50px;
+    position: relative;
+    bottom: 80px;
+    background-color: rgb(119, 109, 128);
+    border-radius: 20px;
+    border-bottom: 4px solid rgb(134, 133, 133);
+    border-right: 4px solid rgb(134, 133, 133);
 }
 
 section{
-    
+    position: relative;
+    left: 20%;
+}
+
+
+.textarea {
+    display:inline-block;
+    width: 350px;
+    height: 152px;
+    resize:none;
+    border-radius: 10px;
+}
+
+#offset{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 5px;
 }

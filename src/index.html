@@ -12,24 +12,26 @@
       <p>Olá, defina o offset e digite sua mensagem com segurança!</p>
     </header>
 
-<!--------------------------------Conteúdo principal--------------------------------------------->
+<!--------------------------------Offset:---------------------------------------------------------->
 
     <main>
       <section>
+      <form id="formulario">
+        <input type="number" id="des" required>
+      </form>
+
+<!---------------------------------caixas de texto:-------------------------------------------------->
+
       <form>
-        <label><input id="offset" name="offset_name" placeholder="offset:" required></label>
+        <textarea id="msg_tocifer" class="textarea" name="msg" value="S" placeholder=" O que gostaria de cifar?"></textarea>
+        <button type="submit" id="to_cifer" class="button" >Cifrar</button>   <!--Chamar uma função com onclick--->
+        <textarea id="msg_cifered" class="textarea" name="msg" placeholder=" Mensagem criptografada"></textarea>
       </form>
 
       <form>
-        <textarea id="msg_tocifer" class="textarea" name="msg" placeholder="O que gostaria de cifar?"></textarea>
-        <button type="submit" id="to_cifer" class="button" onclick="; return false">Cifrar</button>   <!--Chamar uma função com onclick--->
-        <textarea id="msg_cifered" class="textarea" name="msg" placeholder="Mensagem criptografada"></textarea>
-      </form>
-
-      <form>
-        <textarea id="msg_todecifer" class="textarea" name="msg" placeholder="O que gostaria de decifrar?"></textarea>
+        <textarea id="msg_todecifer" class="textarea" name="msg" placeholder=" O que gostaria de decifrar?"></textarea>
         <button type="submit" id="to_decifer" class="button" onclick="; return false">Decifrar</button>   <!--Chamar uma função com onclick--->
-        <textarea id="msg_decifered" class="textarea" name="msg" placeholder="Mensagem Descriptografada"></textarea>
+        <textarea id="msg_decifered" class="textarea" name="msg" placeholder=" Mensagem Descriptografada"></textarea>
       </form>
 
       <button type="reset" onclick="">Limpar</button> <!--inserir função reset-->
