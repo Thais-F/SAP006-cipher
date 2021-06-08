@@ -3,10 +3,11 @@ const cipher = {
     
     let array = string.split("");
     let str = "";
+    let offset_n = parseInt(offset);
 
     array.forEach(function (e){
 
-    let indice2 = ((e.charCodeAt() - 65 + offset) % 26) + 65;
+    let indice2 = ((e.charCodeAt() - 65 + offset_n) % 26) + 65;
     let cifradaLetra = String.fromCharCode(indice2);
     str = str.concat(cifradaLetra); 
     }); return str;
