@@ -19,28 +19,25 @@
   <main>
     <section>
       <form id="formulario">
-        <input type="number" id="des" required>
+        <input  type="number" id="des" class="main" required>
       </form>
 
       <!---------------------------------caixas de texto:-------------------------------------------------->
 
       <form>
-        <textarea id="msg_tocifer" class="textarea" name="msg" value="S"
-          placeholder=" O que gostaria de cifar?"></textarea>
-        <button type="submit" id="to_cifer" class="button">Cifrar</button>
-        <!--Chamar uma função com onclick--->
-        <textarea id="msg_cifered" class="textarea" name="msg" placeholder=" Mensagem criptografada"></textarea>
+        <textarea id="msg_tocifer" class="main" name="msg" placeholder=" O que gostaria de cifar?"></textarea>
+        <button type="submit" id="to_cifer" class="button">Cifrar</button> 
+        <textarea id="msg_cifered" class="main" name="msg" placeholder=" Mensagem criptografada"></textarea>
       </form>
 
       <form>
-        <textarea id="msg_todecifer" class="textarea" name="msg" placeholder=" O que gostaria de decifrar?"></textarea>
-        <button type="submit" id="to_decifer" class="button" onclick="; return false">Decifrar</button>
-        <!--Chamar uma função com onclick--->
-        <textarea id="msg_decifered" class="textarea" name="msg" placeholder=" Mensagem Descriptografada"></textarea>
+        <textarea id="msg_todecifer" class="main" name="msg" placeholder=" O que gostaria de decifrar?"></textarea>
+        <button type="submit" id="to_decifer" class="button">Decifrar</button>
+        <textarea id="msg_decifered" class="main" name="msg" placeholder=" Mensagem Descriptografada"></textarea>
       </form>
 
-      <button type="reset" onclick="">Limpar</button>
-      <!--inserir função reset-->
+      <button type="reset" id="limpar" value="Limpar">Limpar</button>
+      
     </section>
 
   </main>

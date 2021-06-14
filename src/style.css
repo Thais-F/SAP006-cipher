@@ -23,7 +23,7 @@ section{
 }
 
 
-.textarea {
+textarea {
     display:inline-block;
     width: 350px;
     height: 152px;
@@ -31,7 +31,7 @@ section{
     border-radius: 10px;
 }
 
-#offset{
+#des{
     width: 30px;
     height: 30px;
     border-radius: 10px;
