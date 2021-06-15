@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <h1>Cifra de César</h1>
+    <p>Olá, este site utiliza como método de criptografia a chamada Cifra de César. Abaixo encontra-se uma breve explicação:</p>
+    <p>A Cifra de César é uma técnica bastante simples e provavelmente a mais conhecida de todas.</p>
+    <p>Trata-se de um tipo de cifra de substituição, na qual cada letra de um texto a ser criptografado é substituída por outra letra, presente no alfabeto porém deslocada um certo número de posições à esquerda ou à direita. No entanto, aqui utilizaremos apenas posições à esquerda.</p>
+    <p>Por exemplo, se usarmos uma troca de quatro posições à esquerda, cada letra é substituída pela letra que está quatro posições adiante no alfabeto, e nesse caso a letra A seria substituída pela letra E, B por F, C por G, e assim sucessivamente.</p>
+    <p>A cifra de César recebe esse nome pois, segundo o escritor Suetônio, foi utilizada por Júlio César para se comunicar com seus generais, protegendo mensagens militares.</p>
+    <p>Agora que você já sabe, é só escolher seu deslocamento e inserir a mensagem que deseja cifrar ou decifrar.</p>
+  </header>
+
+  <!--------------------------------Offset:---------------------------------------------------------->
+
+  <main>
+    <section>
+      <form id="formulario">
+        <input  type="number" id="des" class="main" required>
+      </form>
+
+      <!---------------------------------caixas de texto:-------------------------------------------------->
+
+      <form>
+        <textarea id="msg_tocifer" class="main" name="msg" placeholder=" O que gostaria de cifar?"></textarea>
+        <button type="submit" id="to_cifer" class="button">Cifrar</button> 
+        <textarea id="msg_cifered" class="main" name="msg" placeholder=" Mensagem criptografada"></textarea>
+     
+        <textarea id="msg_todecifer" class="main" name="msg" placeholder=" O que gostaria de decifrar?"></textarea>
+        <button type="submit" id="to_decifer" class="button">Decifrar</button>
+        <textarea id="msg_decifered" class="main" name="msg" placeholder=" Mensagem Descriptografada"></textarea>
+      </form>
+      
+    </section>
+
+  </main>
+
+  <!-----------------------------------Fim do conteúdo principal----------------------------------------->
+
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>
