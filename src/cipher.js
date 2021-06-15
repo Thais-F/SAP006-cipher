@@ -1,21 +1,8 @@
 const cipher = {
     encode: function (offset, string) {
-        if (offset == 0 || offset == null || offset == "") {
-            alert("O offset não pode estar vazio ou zerado!");
-            throw Error("O offset não pode estar vazio ou zerado!");
-        }
-
-        else if (string == "") {
-            alert("Por favor, digite sua mensagem!");
-            throw Error("Mensagem vazia!");
-        }
-
-        else {
             let array = string.split("");
             let str = "";
             let offset_n = parseInt(offset);
-
-
 
             array.forEach(function (e) {
                 let cifradaLetra = ""
@@ -34,27 +21,12 @@ const cipher = {
                 }
                 cifradaLetra = String.fromCharCode(indice);
                 str = str.concat(cifradaLetra);
-                //console.log(str);
             });
             return str;
-        }
-
-
         //return str;
     },
 
     decode: function (offset, string) {
-        if (offset == 0 || offset == null || offset == "") {
-            alert("O offset não pode estar vazio ou zerado!");
-            throw Error("O offset não pode estar vazio ou zerado!");
-        }
-
-        else if (string == "") {
-            alert("Por favor, digite sua mensagem!");
-            throw Error("Mensagem vazia!");
-        }
-
-        else {
             let array2 = string.split("");
             let str = "";
             let offset_n = parseInt(offset);
@@ -95,10 +67,8 @@ const cipher = {
                 }
                 cifradaLetra2 = cifradaLetra2 + String.fromCharCode(indiceFinal);
                 str = str.concat(cifradaLetra2);
-                console.log(str);
 
-            }); return str;  //fechamento do forEach
-        }
+            }); return str;  //fechamento do forEach   
     },  // fechamento do decode
 };
 

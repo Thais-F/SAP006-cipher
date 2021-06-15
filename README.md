@@ -1,20 +1,9 @@
-
-### Parte Obrigatória
-
-* [ ] `README.md` adicionar informação sobre o processo e decisões do desenho.
-* [ ] `README.md` explicar claramente quem são os usuários e as suas relações
-  com o produto.
-* [ ] `README.md` explicar claramente como o produto soluciona os
-  problemas/necessidades dos usuários.
-
 <Layout:>
+Layout desenvolvido com a ferramenta Figma. Apenas uma página com as caixinhas para cifrar e decifrar as mensagens.
 
 
+<Usuários e Produto:>
+Canal seguro de conversas entre cliente advogado, médico paciente, ou qualquer negócio ou empresa que queira sigilo ou simplesmente aumentar a segurança de suas negociações/informações.
+A ideia é que se defina uma chave de deslocamento com quem se quer trocar informações e a partir daí sempre encriptografar ou descriptografar as mensagens com esse valor.
 
-<Usuários:>
-Funcionários de empresas que trabalham com segurança privada.
 
-<Produto:>
-Cria um canal seguro de troca de informações entre os funcionários da empresa para que não vazem informações sigilosas de seus clientes. 
-
-Para qualquer operação ou troca de dados de usuários as mensagens serão criptografadas, aumentando tanto a segurança quanto a confiança do cliente.
